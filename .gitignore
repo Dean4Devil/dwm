@@ -1,0 +1,10 @@
+# Ignore generated config
+/config.h
+
+# Ignore YouCompleteMe config and clang completion database
+/.ycm_extra_conf.py
+/.ycm_extra_conf.pyc
+/compile_commands.json
+
+# Ignore Vim caches
+.*.swp
