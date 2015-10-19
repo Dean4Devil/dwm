@@ -2,11 +2,11 @@
 
 /* appearance */
 static const char *fonts[] = {
-    "Hack:size=10.5",
-    "Quicksand:size=10.5",
-    "FontAwesome:size=10.5",
+    "Hack:size=10",
+    "Quicksand:size=10",
+    "FontAwesome:size=10",
 };
-static const char dmenufont[] = "-*-Hack-*-*-12-*-*-*-*-*-*-*";
+static const char dmenufont[] = "-*-Hack-*-*-10-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -61,8 +61,8 @@ static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
