@@ -5,8 +5,8 @@
 
 #include "util.h"
 
-void
-die(const char *errstr, ...) {
+void die(const char *errstr, ...)
+{
 	va_list ap;
 
 	va_start(ap, errstr);

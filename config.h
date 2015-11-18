@@ -1,7 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *fonts[] = {
+static const char *fonts[] =
+{
     "Hack:size=10",
     "Quicksand:size=10",
     "FontAwesome:size=10",
@@ -21,7 +22,8 @@ static const Bool topbar            = True;     /* False means bottom bar */
 /* tagging */
 static const char *tags[] = { "", "", "", "", "", "", "7", "8", "9" };
 
-static const Rule rules[] = {
+static const Rule rules[] =
+{
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
@@ -42,7 +44,8 @@ static const float mfact      = 0.55; /* factor of master area size [0.05..0.95]
 static const int nmaster      = 1;    /* number of clients in master area */
 static const Bool resizehints = True; /* True means respect size hints in tiled resizals */
 
-static const Layout layouts[] = {
+static const Layout layouts[] =
+{
 	/* symbol     arrange function */
 	{ "",      tile },    /* first entry is default */
 	{ "",      NULL },    /* no layout function means floating behavior */
@@ -65,7 +68,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
-static Key keys[] = {
+static Key keys[] =
+{
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
@@ -104,7 +108,8 @@ static Key keys[] = {
 
 /* button definitions */
 /* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
-static Button buttons[] = {
+static Button buttons[] =
+{
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
